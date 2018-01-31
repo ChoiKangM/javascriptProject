@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>callbackJS</title>
+</head>
+<body>
+	<script>
+		function sum(a,b,callback){
+			var result = a + b;
+			callback();
+			return result;
+		}
+		var sub = function(a,b,callback){
+			callback();
+			return a - b;
+		}
+		var r = sum(10,20,function(){
+			alert('a와 b를 더했습니다');
+		});
+		var t = sub(10,20,function(){
+			alert('a에서 b를 뺐습니다.');
+		})
+		document.write(r);
+		document.write(t);
+	</script>
+</body>
+</html>

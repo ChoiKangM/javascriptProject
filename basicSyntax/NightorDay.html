@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    function daynighthandler(self){
+      var target = document.querySelector('body');
+      if(self.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      self.value = 'day';
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length){
+        alist[i].style.color = 'yellow';
+        i++;
+      }
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      self.value = 'night';
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length){
+        alist[i].style.color = 'blue';
+        i++;
+      }
+    }
+    }
+  </script>
+</head>
+<body>
+  <h1><a href="#">Hello World</a></h1>
+  <ol>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">Javascript</a></li>
+  </ol>
+  <input type="button" value="night" onclick="daynighthandler(this)">
+</body>
+</html>
