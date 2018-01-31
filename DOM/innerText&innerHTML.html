@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>innerText&innerHTML</title>
+</head>
+<body>
+	<div id="text"></div>
+	<div id="html"></div>
+	<script>
+		var text = document.querySelector('#text');
+		var html = document.querySelector('#html');
+	
+		// text 삽입
+		text.innerText = "<h1>new Text!!</h1>";
+
+		// HTML 삽입
+		html.innerHTML = "<h1>new HTML!!</h1>";
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>controlAttribute</title>
+	<style>
+		#box{
+			width: 100px;
+			height: 100px;
+			border: 3px solid black;
+		}
+		.box{
+			background: orange;
+		}
+	</style>
+</head>
+<body>
+	<div id="box" class="box" onclick="remoteAttr()">Remove orange</div>
+	<script>
+		function remoteAttr(){
+			// 속성 제거
+			var box = document.getElementById('box');
+			box.removeAttribute('class');
+		}
+	</script>
+</body>
+</html>

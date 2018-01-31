@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>singleSelctor</title>
+</head>
+<body>
+	<h1 id="title">여기를 변경해 주세요</h1>
+
+	<ul>
+		<li>첫번째</li>
+		<li>요소만</li>
+		<li>변해요</li>
+	</ul>
+	<script>
+		var title = document.getElementById('title');
+
+		title.style.color = 'white';
+		title.style.background = 'orange';
+		title.innerHTML = "JavaScript로 문서 조작되지롱";
+
+		var li = document.querySelector('li');
+		li.style.color = "red";
+		li.style.background = "blue";
+	</script>
+</body>
+</html>

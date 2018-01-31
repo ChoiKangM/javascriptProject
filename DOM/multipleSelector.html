@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>multipleSelector</title>
+</head>
+<body>
+	<ul>
+		<li>여러</li>
+		<li>요소</li>
+		<li>변해요</li>
+	</ul>
+	<button onclick="setColor()">Click</button>
+	<script>
+		var li = document.getElementsByTagName('li');
+		li[1].style.backgroundColor = "red";
+		li[1].style.color = "white";
+
+		function setColor(){
+			//문서 내의 모든 li 요소 선택
+			var li = document.querySelectorAll("li");
+
+			// 모든 li 요소에 속성 적용
+			for(var i = 0; i < li.length; i++){
+				li[i].style.color = "green";
+				li[i].style.backgroundColor = "orange";
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>controlAttribute</title>
+	<style>
+		#box{
+			width: 100px;
+			height: 100px;
+			border: 3px solid black;
+		}
+		.box{
+			background: orange;
+		}
+	</style>
+</head>
+<body>
+	<div id="box" onclick="changeColor()">Change to orange</div>
+	<script>
+		function changeColor(){
+			// 속성(Attribute) 설정
+			var box = document.getElementById('box');
+			box.setAttribute('class','box');
+		}
+	</script>
+</body>
+</html>
