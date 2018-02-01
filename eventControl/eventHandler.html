@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>eventHandler</title>
+</head>
+<body>
+	<button id="btn">click</button>
+	<script>
+		var btn = document.getElementById('btn');
+
+		btn.onclick = function(){
+			alert('event 1');
+		}
+		// 이벤트 핸들러의 경우 마지막 이벤트만 적용된다.
+		btn.onclick = function(){
+			alert('event 2');
+		}
+	</script>
+</body>
+</html>

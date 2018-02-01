@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>thisEventHandler.html</title>
+</head>
+<body>
+	<script>
+		window.onload = function(){
+			var h1 = document.querySelector('h1');
+			
+			// 문서 객체에 클릭 이벤트를 적용합니다.
+			h1.onclick = function(){
+				//this는 클릭한 문서 객체 자신을 의미합니다.
+				this.innerHTML = '클릭했습니다.';
+			}
+		}
+	</script>
+	<h1>홈페이지에 오신 것을 환영합니다.</h1>
+</body>
+</html>

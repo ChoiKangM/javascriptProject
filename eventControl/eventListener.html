@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>eventListener</title>
+</head>
+<body>
+	<button id="btn">click</button>
+	<script>
+		var btn = document.getElementById('btn');
+
+		btn.addEventListener('click',function(){
+			alert('event 1');
+		});
+		//btn 객체에 두 이벤트가 순차적으로 적용된다.
+		btn.addEventListener('click',function(){
+			alert('event 2');
+		});
+	</script>
+</body>
+</html>

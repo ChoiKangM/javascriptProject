@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>afterEventHandler</title>
+</head>
+<body>
+	<script>
+		//window 객체에 onload 이벤트 핸들러 속성을 적용해
+		//문서가 로딩된 후 자바스크립트가 실행되도록 처리합니다. 
+		window.onload = function() {
+			var h1 = document.querySelector('h1');
+			h1.innerHTML = '문서를 로딩했습니다.';
+		}
+	</script>
+	<h1>홈페이지에 오신 것을 환영합니다.</h1>
+</body>
+</html>
