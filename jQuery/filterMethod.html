@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>filterMethod</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<ul>
+		<li>first</li>
+		<li>second</li>
+		<li>third</li>
+		<li class="fourth">fourth</li>
+		<li><em>fifth</em></li>
+		<li>sixth</li>
+	</ul>
+
+
+	<script>
+		$(document).ready(function(){
+			$('li').first().css('background-color', 'orange');
+			$('li').eq(1).css('font-size','2em');
+			$('li').filter('.fourth').css('font-style','italic');
+			$('li').has('em').css('border','3px dotted');
+			$('li').last().css('border','3px solid')
+		});
+	</script>
+
+</body>
+</html>

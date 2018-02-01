@@ -1,15 +1,18 @@
 # javascriptProject
-자바스크립트 프로젝트북
+### 자바스크립트 프로젝트북
+##### 실무에 적합한 9가지 프로젝트로 배우는 웹 프로그래밍
+  
+###### 섹션 별로 펼쳐서 보세요
 
 <details><summary>배경지식</summary>
 <p>
 
-* HTML을 먼저 불러온 후 자바스크립트를 실행한다.   
+##### HTML을 먼저 불러온 후 자바스크립트를 실행한다.   
 
 > 문서 하단 <body> 태그가 끝나기 전에 작성한다. 
 > /basicSyntax/internalJS.html
 
-* 성능 향상을 위해 CSS3와 자바스트립트 간의 역활 분담을 해야한다.
+##### 성능 향상을 위해 CSS3와 자바스트립트 간의 역활 분담을 해야한다.
 
 > CSS3의 그래픽 처리는 하드웨어 가속으로 작동해 자바스크립트의 그래픽 처리 보다 현저히 부드럽다. 
 > /basicSyntax/css3&jQuery.html  
@@ -21,13 +24,13 @@
 <details><summary>Basic Syntax</summary>
 <p>
 
- * 동적 타입의 변수 선언    
+##### 동적 타입의 변수 선언    
 
 > 특정 값을 입력하는 순간 타입이 자동으로 선언된다. 
 > /basicSyntax/jsDynamicTypes.html
 
 
-* UX/Ui 기본
+##### UX/Ui 기본
 
 > document.write 함수 사용  
 > /basicSyntax/multipleTable.html  
@@ -38,25 +41,25 @@
 > eventhandler 응용
 > /basicSyntax/NightorDay.html
 
-* for
+##### for
 
 > /basicSyntax/forloop.html
 
 
-* function
+##### function
 
 > /basicSyntax/functionJS.html
 
-* callback
+##### callback
 
 > 많이 사용되는 콜백 함수다 익숙해지자
 > /basicSyntax/callbackJS.html
 
-* array
+##### array
 
 > /basicSyntax/arrayJS.html
 
-* object
+##### object
 
 > /basicSyntax/objectJS.html 
 </p>
@@ -67,33 +70,33 @@
 <details><summary>DOM</summary>
 <p>
     
-* single Selector  
+##### single Selector  
 
 > document.getElementById(id명): 아이디 사용해 문서 객체(요소) 선택  
 > document.querySelector(CSS 선택자): CSS 선택자를 사용하는 방식(IE 8 이상)    
 > /DOM/singleSelector.html  
 
-* multiple Selector
+##### multiple Selector
 
 > document.getElementsByTagName(요소명): 태크명으로 여러 문서 객체 선택  
 > document.getElementsByClassName(클래스명): 클래스명으로 여러 문서 객체 선택(IE 9 이상)  
 > document.querySelectorAll(CSS 선택자): CSS 선택자로 여러 문서 객체 전달(IE 9 이상)  
 > /DOM/multipleSelector.html  
 
-* 텍스트 조작
+##### 텍스트 조작
 
 > DOM.innerText: 요소 내부의 텍스트를 읽거나 변경  
 > DOM.innerHTML: 요소 내부의 HTML 형식을 읽거나 변경  
 > /DOM/innerText&innerHTML.html  
  
-* Style 객체
+##### Style 객체
 
 > 요소.style.backgroundImage: background-image   
 > 요소.style.backgroundColor: background-color   
 > 요소.style.listStyle: list-style   
 > /DOM/styleObject.html  
 
-* 속성 조작
+##### 속성 조작
 
 > setAttribute(속성명, 값): 속성값 설정  
 > getAttribute(속성명): 속성값 읽기  
@@ -102,7 +105,7 @@
 > /DOM/getAttribute.html  
 > /DOM/removeAttribute.html  
 
-* 응용
+##### 응용
 
 > make div Red or Blue  
 > /DOM/red&blueButton.html  
@@ -113,7 +116,7 @@
 <details><summary>이벤트 제어</summary>
 <p>
     
-* 마우스와 키보드 이벤트  
+##### 마우스와 키보드 이벤트  
 
 ```
 
@@ -134,7 +137,7 @@
 > onsubmit          : 폼 전송 이벤트가 발생했을 때  
 
 
-* 이벤트 핸들러
+##### 이벤트 핸들러
 
 ```
 (문서 객체).(이벤트 속성명) = function(){}
@@ -143,13 +146,13 @@
 > /eventControl/beforeEventHandler.html  
 > /eventControl/afterEventHandler.html
 
-* 이벤트 객체와 this
+##### 이벤트 객체와 this
 
 > this는 이벤트가 발생한 객체 자신을 의미합니다.  
 > 사용자가 클릭한 요소의 위치를 반환해주기 때문에 상대적인 지정 방식으로 자주 사용합니다.  
 > /eventControl/thisEventHandler.html
 
-* 이벤트 리스너
+##### 이벤트 리스너
 
 > 이벤트 핸들러는 객체에 속성으로 이벤트를 지정하는 방식
 >> 요소당 하나의 이벤트  
@@ -166,42 +169,143 @@
 > 이벤트 타입: 이벤트 속성을 지정합니다. 앞에 on을 붙이지 않습니다.  
 > 리스너: 이벤트가 발생할 때 호출할 함수 또는 메서드를 지정합니다.   
 
-* hover 구현
+##### hover 구현
 
 > 자바스크립트에 hover 이벤트가 따로 있지 않아  
 > mouseover와 mouseout 이벤트를 조합해 구현할 수 있다.  
 > /eventControl/hoverForJS.html
 
-* submit 이벤트와 기본 동작 방지
+##### submit 이벤트와 기본 동작 방지
 
 > 기본 이벤트를 차단할 수 있다. preventDefault() 사용  
 >  /eventControl/submitWithPreventDefault.html  
 
-* 터치 이벤트
+##### 터치 이벤트
 
 > touchstart: 화면을 건드렸을 때  
 > touchend: 화면에서 손을 떼었을 때  
 > touchmove: 화면에서 터치로로 이동 중일때  
 > /eventControl/touchEvent.html
 
-* 이벤트 바인딩
+##### 이벤트 바인딩
 
 > 바인딩이란 함수를 외부에 작성하고 내부에는 함수명만 작성하는 방식  
 > 처리는 동일합니다  
 > /eventControl/eventBinding.html  
 
-* 드래그 앤 드롭 구현
+##### 드래그 앤 드롭 구현
 
 > /eventControl/touchEvent.html 참조해 만들었습니다.  
 > clientX: 브라우저 화면을 기준으로 한 X 좌표  
 > clientY: 브라우저 화면을 기준으로 한 Y 좌표  
-> touchmove: 화면에서 터치로 이동 중일 때
+> touchmove: 화면에서 터치로 이동 중일 때  
 > /eventControl/drag&drop.html  
 
 
 </p>
 </details>
 
- 
 
+
+<details><summary>jQuery</summary>
+<p>
+    
+##### jQuery 추가하기  
+
+> 제이쿼리 파일은 사용자가 작성한 자바스크립트 코드(app.js)보다 반드시 먼저 위치해야한다.  
+> 압축 버전(*.min.js)과 비압축 버전(*.js)이 있다.  
+
+```
+<head>
+    <title>jQuery</title>
+    <script src="jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+```
+
+> CDN(Content Delivery Network) 서비스로 추가하기  
+```
+<head>
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+```
+
+> 기본 문법
+```
+$(선택자).메서드;
+$(객체).메서드;
+```
+
+##### 객체와 메서드
+```
+$(document).ready();
+```
+
+> jQuery로 코드를 작성할 때 가장 먼저 작성하는 함수이며  
+> 문서 로딩 완료 후 함수 안의 명령어를 실행합니다.  
+> 네이티브 자바스크립트의 window.onload 이벤트 핸들러와 같은 역활입니다.   
+> /jQuery/object&Method.html
+
+##### 선택자
+
+###### CSS 선택자 사용해 제어하자
+> /jQuery/selector.html
+
+###### 필터 메서드 사용하자
+> .eq(): 특정 순서의 요소를 선택합니다. 매개변수의 배열값으로 지정합니다.    
+> .filter(): 매개 변수에 지정한 이름의 형제 요소를 선택합니다.  
+> .first(): 첫번째 요소를 선택합니다.  
+> .last(): 마지막 요소를 선택합니다.  
+> .has(): 매개변수에 지정된 요소를 자식 요소로 포함한 요소를 선택합니다.  
+>> /jQuery/filterMethod.html
+###### DOM 탐색 메서드
+> .parent(): 직계 부모 요소를 선택합니다.  
+> .parents(): 매개 변수에 지정한 이름의 조상을 탐색합니다.   
+> .children(): 매개 변수에 지정한 후손을 선택합니다.  
+> .find(): 하위 후손 노드를 찾아 선택합니다.  
+> .siblings(): 매개 변수에 지정한 형제 요소를 선택합니다.  
+> .prev(): 이전 형제 요소를 선택합니다.  
+> .next(): 다음 형제 요소를 선택합니다.  
+>> /jQuery/findParentChild.html  
+>> /jQuery/findSiblings.html  
+
+ ##### 문서 조작
+> 클래스 조작
+> 
+> 
+
+
+> 속성 조작
+>
+
+> 스타일 조작
+>
+
+> 문서 정보 조작
+>
+
+> 문서 객체 추가
+>
+
+> 문서 객체 이동
+>
+
+
+
+ ##### jQuery 애니메이션
+
+
+ ##### jQuery 이벤트
+> 이벤트 타입 메서드
+>
+
+> on() 메서드
+> 
+
+
+
+</p>
+</details>
 
