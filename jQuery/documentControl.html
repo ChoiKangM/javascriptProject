@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>docuemntControl</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<ul>
+		<li>Home</li>
+		<li>Portfolio</li>
+		<li>About</li>
+		<li>Contact</li>
+	</ul>
+	<script>
+		$(function(){
+			$('li').first().html('<h1>HTML 추가</h1>');
+			$('li').last().text('<h1>HTML 추가</h1>');
+
+			var html = $('li').first().html();
+			var text = $('li').first().text();
+			console.log(html);
+			console.log(text);
+		});
+
+	</script>
+</body>
+</html>

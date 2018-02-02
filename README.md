@@ -140,7 +140,7 @@
 ##### 이벤트 핸들러
 
 ```
-(문서 객체).(이벤트 속성명) = function(){}
+    (문서 객체).(이벤트 속성명) = function(){}
 ```
 > 자바스크립트가 문서를 조작하려고 할 경우 문서보다 먼저 작성하면 안됩니다.  
 > /eventControl/beforeEventHandler.html  
@@ -216,31 +216,31 @@
 > 압축 버전(*.min.js)과 비압축 버전(*.js)이 있다.  
 
 ```
-<head>
-    <title>jQuery</title>
-    <script src="jquery.min.js"></script>
-    <script src="app.js"></script>
-</head>
+    <head>
+        <title>jQuery</title>
+        <script src="jquery.min.js"></script>
+        <script src="app.js"></script>
+    </head>
 ```
 
 > CDN(Content Delivery Network) 서비스로 추가하기  
 ```
-<head>
-    <title>jQuery</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="app.js"></script>
-</head>
+    <head>
+        <title>jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="app.js"></script>
+    </head>
 ```
 
 > 기본 문법
 ```
-$(선택자).메서드;
-$(객체).메서드;
+    $(선택자).메서드;
+    $(객체).메서드;
 ```
 
 ##### 객체와 메서드
 ```
-$(document).ready();
+    $(document).ready();
 ```
 
 > jQuery로 코드를 작성할 때 가장 먼저 작성하는 함수이며  
@@ -273,37 +273,71 @@ $(document).ready();
 
  ##### 문서 조작
 > 클래스 조작
-> 
-> 
+> .addClass(): 요소 내에 클래스를 추가합니다.  
+> .removeClass(): 요소 내의 클래스를 제거합니다.  
+> .toggleClass(): 요소 내의 클래스를 번갈아 가며 추가 또는 삭제(토글)합니다.  
+> /jQuery/classControl.html  
 
 
 > 속성 조작
->
+> .attr(속성): 요소 내의 속성을 읽어 옵니다.  
+> .attr(속성,값): 요소 내의 속성을 추가합니다.  
+> .removeAttr(속성): 요소 내의 속성을 제거 합니다.  
+> /jQuery/attributeControl.html  
 
 > 스타일 조작
->
+> .css(속성): css 속성을 읽어옵니다.  
+> .css(속성,값): css 속성을 변경합니다.  
+> /jQuery/styleControl.html  
 
 > 문서 정보 조작
->
+> .html(): 요소 내의 HTML을 읽어옵니다.  
+> .html(값): 요소 내에 HTML을 추가합니다.  
+> .text(): 요소 내의 텍스트 정보를 읽어옵니다.  
+> .text(값): 요소 내에 텍스트 정보를 추가합니다.  
+> /jQuery/documentControl.html  
 
 > 문서 객체 추가
->
+> .append(content): 지정한 선택자(요소) 안의 뒤에 추가합니다.  
+> .prepend(content): 지정한 선택자(요소) 안의 앞에 추가합니다.  
+> .after(content): 지정한 선택자(요소) 뒤(형제)에 추가합니다.  
+> .before(content): 지정한 선택자(요소) 앞(형제)에 추가합니다.    
+> /jQuery/addDocumentObject.html
 
 > 문서 객체 이동
->
+> .appendTo(요소명): 지정한 선택자(요소) 안의 뒤에 추가합니다.
+> .prependTo(요소명): 지정한 선택자(요소) 안의 앞에 추가합니다.
+> /jQuery/moveDocumentObject.html
 
 
 
  ##### jQuery 애니메이션
+```
+    .animate(속성, [재생 시간], [easing], [콜백 함수])
 
+    속성: 애니메이션을 적용하려는 속성을 작성합니다.
+    재생 시간: 애니메이션 재생시간을 ms 단위로 지정합니다.
+    easing: 속도 변화 옵션을 적용합니다.
+    콜백 함수: 애니메이션 재생이 끝난 후 처리할 콜백 함수를 지정합니다.
+```
+> /jQuery/animation.html
 
  ##### jQuery 이벤트
-> 이벤트 타입 메서드
->
+> 이벤트 타입 메서드  
+> /jQuery/eventTypeMethod.html  
+```
+    $('문서 객체명').click(function(){
+        // ...
+    });
+```
 
-> on() 메서드
-> 
-
+> on() 메서드  
+> /jQuery/onMethod.html  
+```
+    $('문서 객체명').on('이벤트명', function(){
+       // ... 
+    });
+```
 
 
 </p>

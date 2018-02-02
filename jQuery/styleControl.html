@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>styleControl</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<ul>
+		<li>Home</li>
+		<li>Portfolio</li>
+		<li>About</li>
+		<li class="select">Contact</li>
+	</ul>
+	<script>
+		$(function(){
+			// 기본 서식
+			$('li').first()
+					  .css('border','3px dashed')
+					  .css('background', 'pink');
+			// 객체 리터럴 서식
+			$('li').last().css({
+				'border': '3px dashed',
+				'background': 'azure'
+			});
+
+			var bgcolor = $('li').last().css('backgroundColor');
+			console.log(bgcolor);
+		});
+	</script>
+</body>
+</html>
