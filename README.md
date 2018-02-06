@@ -120,11 +120,11 @@
 
 ```
 
-<요소 이벤트 핸들러 속성 = 'javaScript 명령어'>  
+    <요소 이벤트 핸들러 속성 = 'javaScript 명령어'>  
 
-<a href="http://www.google.com" onclick ="alert('구글로 이동합니다.')">
-  구글  
-</a>
+    <a href="http://www.google.com" onclick ="alert('구글로 이동합니다.')">
+      구글  
+    </a>
 
 ```  
 
@@ -163,7 +163,7 @@
 > /eventControl/eventListener.html 
 
 ```
-(문서 객체).addEventListener(이벤트 타입, 리스너);
+    (문서 객체).addEventListener(이벤트 타입, 리스너);
 ```
 
 > 이벤트 타입: 이벤트 속성을 지정합니다. 앞에 on을 붙이지 않습니다.  
@@ -343,3 +343,14 @@
 </p>
 </details>
 
+
+
+
+
+
+<details><summary>다이나믹 배너</summary>
+<p>
+    
+
+</p>
+</details>
