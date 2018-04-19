@@ -1,7 +1,7 @@
 # javascriptProject
 ### 자바스크립트 프로젝트북
 ##### 실무에 적합한 9가지 프로젝트로 배우는 웹 프로그래밍
-  
+
 ###### 섹션 별로 펼쳐서 보세요
 
 <details><summary>배경지식</summary>
@@ -9,12 +9,12 @@
 
 ##### HTML을 먼저 불러온 후 자바스크립트를 실행한다.   
 
-> 문서 하단 <body> 태그가 끝나기 전에 작성한다. 
+> 문서 하단 <body> 태그가 끝나기 전에 작성한다.
 > /basicSyntax/internalJS.html
 
 ##### 성능 향상을 위해 CSS3와 자바스트립트 간의 역활 분담을 해야한다.
 
-> CSS3의 그래픽 처리는 하드웨어 가속으로 작동해 자바스크립트의 그래픽 처리 보다 현저히 부드럽다. 
+> CSS3의 그래픽 처리는 하드웨어 가속으로 작동해 자바스크립트의 그래픽 처리 보다 현저히 부드럽다.
 > /basicSyntax/css3&jQuery.html  
 
 </p>
@@ -26,7 +26,7 @@
 
 ##### 동적 타입의 변수 선언    
 
-> 특정 값을 입력하는 순간 타입이 자동으로 선언된다. 
+> 특정 값을 입력하는 순간 타입이 자동으로 선언된다.
 > /basicSyntax/jsDynamicTypes.html
 
 
@@ -61,15 +61,15 @@
 
 ##### object
 
-> /basicSyntax/objectJS.html 
+> /basicSyntax/objectJS.html
 </p>
 </details>
 
-  
+
 
 <details><summary>DOM</summary>
 <p>
-    
+
 ##### single Selector  
 
 > document.getElementById(id명): 아이디 사용해 문서 객체(요소) 선택  
@@ -88,7 +88,7 @@
 > DOM.innerText: 요소 내부의 텍스트를 읽거나 변경  
 > DOM.innerHTML: 요소 내부의 HTML 형식을 읽거나 변경  
 > /DOM/innerText&innerHTML.html  
- 
+
 ##### Style 객체
 
 > 요소.style.backgroundImage: background-image   
@@ -115,7 +115,7 @@
 
 <details><summary>이벤트 제어</summary>
 <p>
-    
+
 ##### 마우스와 키보드 이벤트  
 
 ```
@@ -159,8 +159,8 @@
 > /eventControl/eventHandler.html   
 
 > 이벤트 리스너는 메서드 방식입니다.    
->> 요소당 여러 개의 순차적인 이벤트 처리 가능 
-> /eventControl/eventListener.html 
+>> 요소당 여러 개의 순차적인 이벤트 처리 가능
+> /eventControl/eventListener.html
 
 ```
     (문서 객체).addEventListener(이벤트 타입, 리스너);
@@ -205,11 +205,50 @@
 </p>
 </details>
 
+<details><summary>워밍업: 프로그래밍 도전하기</summary>
+<p>
+
+##### 구구단 출력 애플리케이션
+
+> prompt()  
+
+```
+  // text는 prompt 상자에 표시되는 질문 텍스트
+  // defaultText는 옵션 항목으로 글상자에 표시됩니다
+  prompt(text, defaultText)
+```
+> isNaN()
+```
+  // isNaN() 메서드는 매개 변수에 입력된 값이 문자인지 판단합니다.
+  var str = 'hello';
+  var num = 3;
+  document.write(isNaN(str) + '<br>');  // true
+  document.write(isNaN(num) + '<br>');  // false
+```
+
+##### 작업 목록 애플리케이션
+
+> 이벤트 리스너    
+
+###### appList.html
+
+> 목록을 추가하기 전까지 작동함
+> 목록을 추가하면 작동 안함
+###### appList2.html
+> ul에 클래스를 먹여서 목록을 추가해도 작동함
+
+### 깨달음
+> 이벤트 리스너는 정적인 문서 객체만 제어할 수 있으며,  
+> 자바스크립트에서 동적으로 추가된 요소는 바로 인식하지 못합니다.  
+> 이 경우 이벤트 핸들러와 event.target 속성으로 동적으로 생성된 문서 객체를 알아낼 수 있습니다.  
+
+</p>
+</details>
 
 
 <details><summary>jQuery</summary>
 <p>
-    
+
 ##### jQuery 추가하기  
 
 > 제이쿼리 파일은 사용자가 작성한 자바스크립트 코드(app.js)보다 반드시 먼저 위치해야한다.  
@@ -335,7 +374,7 @@
 > /jQuery/onMethod.html  
 ```
     $('문서 객체명').on('이벤트명', function(){
-       // ... 
+       // ...
     });
 ```
 
@@ -350,7 +389,7 @@
 
 <details><summary>다이나믹 배너</summary>
 <p>
-    
+
 
 </p>
 </details>
